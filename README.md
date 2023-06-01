@@ -1,8 +1,8 @@
-# Foody Express (Online Food Order System)
+# Hungry-Hub (Online Food Order System)
 
 
 <li>An online Food Delivery Application having backend REST-API, made in Java Spring Boot, JPA-Hibernate with MySQL database.
-<li> This project is developed by team of 5 Back-end Developers during Construct Week Project in Masai School.
+<li> This project is developed by Swagatam Bardhan a trainee in Manipal Global Skill Academy.
  
  
 ## Used Tech Stack & Tools:
