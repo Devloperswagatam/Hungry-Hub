@@ -1,0 +1,379 @@
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f5f6fa;
+    color: #2f3542;
+}
+
+.container {
+    /* margin-top: -20px; */
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f5f6fa;
+}
+
+svg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: block;
+    background-color: #0e4166;
+    background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
+}
+
+/* LOGIN CONTAINER STYLING=================================== */
+.login-cont {
+    width: 100%;
+    height: 110%;
+    margin-top: -10rem;
+    padding: 20px;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+
+
+}
+
+#login-form {
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 3em;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: #67e6dc 0px 2px 4px 0px, #67e6dc 0px 2px 16px 0px;
+    transition: all 300ms ease;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+#login-form:hover {
+    scale: 1.2;
+}
+
+h2 {
+    text-align: center;
+    color: #f5f6fa;
+}
+
+#login-form input{
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: transparent;
+    border: none;
+    border-radius: 3em;
+    color: #130f40;
+    box-shadow: #67e6dc 0px 1px 4px, #67e6dc 0px 0px 0px 3px;
+}
+
+#login-form button {
+    margin: 1rem 3.6rem;
+    width: 5rem;
+    padding: 10px;
+    background: transparent;
+    color: #f5f6fa;
+    border: none;
+    border-radius: 3em;
+    cursor: pointer;
+    transition: all 300ms ease;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+    box-shadow: #67e6dc 0px 1px 4px, #67e6dc 0px 0px 0px 3px;
+}
+#login-form button:is(:hover, :focus) {
+    scale: 1.2;
+    background-color: #67e6dc;
+}
+
+#error-msg {
+    color: red;
+    margin-bottom: 10px;
+}
+
+/* SIGNUP CONTAINER STYLING========================== */
+
+.signup-cont {
+    width: 100vw;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f6fa;
+    /* position: fixed;
+    top: 0;
+    z-index: 5; */
+}
+
+#signup-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 3em;
+    background: transparent;
+    border-radius: 3em;
+    box-shadow: #67e6dc 0px 2px 4px 0px, #67e6dc 0px 2px 16px 0px;
+    transition: all 300ms ease;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+#signup-form:hover {
+    scale: 1.1;
+}
+
+#signup-form button {
+    margin: 1rem 9.5rem;
+    width: 5rem;
+    padding: 10px;
+    background: transparent;
+    color: #f5f6fa;
+    border: none;
+    border-radius: 3em;
+    cursor: pointer;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+    box-shadow: #67e6dc 0px 1px 4px, #67e6dc 0px 0px 0px 3px;
+    transition: all 300ms ease;
+}
+#signup-form button:hover{
+    scale: 1.2;
+    background-color: #67e6dc;
+}
+
+h2 {
+    text-align: center;
+}
+
+#signup-form input{
+    width: 95%;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: #67e6dc 0px 1px 4px, #67e6dc 0px 0px 0px 3px;
+    /* box-shadow: #67e6dc 0px 2px 4px 0px, #67e6dc 0px 2px 16px 0px; */
+    margin-bottom: 10px;
+    background: transparent;
+    
+    border: none;
+    border-radius: 3em;
+    color: #130f40;
+}
+
+#error-msg {
+    color: red;
+    margin-bottom: 10px;
+}
+
+/* ==================Home Page========================== */
+
+/* =======================================NAV BAR================================ */
+.home-cont {
+    /* background-color: lightblue; */
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    /* z-index: 6; */
+}
+
+.nav-cont {
+    width: 100vw;
+    background-color: #eb4d4b;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    position: fixed;
+    z-index: 99;
+}
+
+.navlogo-cont {
+    /* background-color: red; */
+    padding: 0 1rem 0 5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navlink-cont {
+    /* background-color: red; */
+    padding: 0 5rem 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.navlink-cont a {
+    /* background-color: red; */
+    padding: 5px;
+    text-decoration: none;
+    color: #2f3542;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 3em;
+    transition: all 300ms ease;
+}
+
+.navlink-cont a:is(:hover, :active) {
+    scale: 1.2;
+    color: #e1b12c;
+}
+
+.navlink-cont button {
+    width: 5rem;
+    padding: 10px;
+    background-color: #feca57;
+    color: #2f3542;
+    font-weight: 700;
+    border: none;
+    border-radius: 3em;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.navlink-cont button:hover {
+    scale: 1.2;
+    background-color: #e1b12c;
+}
+
+/* ============================RESTAURANTS============================ */
+.restaurant-container {
+    margin: 5rem 0 0 0;
+    padding: 0 0 0 2rem;
+    width: auto;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2.5rem;
+    align-items: center;
+    /* background-color: green; */
+}
+
+.restaurant {
+    width: 200px;
+    height: 200px;
+    background-color: #dfe6e9;
+    /* backdrop-filter: blur(10px); */
+    overflow: scroll;
+    padding: 0 1rem 2rem 1rem;
+    border-radius: 2em;
+    color: #130f40;
+    cursor: pointer;
+    transition: all 300ms ease;
+
+}
+
+.restaurant:hover {
+    scale: 1.1;
+    box-shadow: rgb(2, 179, 254) 0px 2px 4px 0px, rgb(3, 176, 250) 0px 2px 16px 0px;
+}
+
+.restaurant h3 {
+    text-align: center;
+}
+
+.restaurant::-webkit-scrollbar {
+    display: none;
+}
+
+/* =================================Restaurant Menu Items===================================== */
+.restaurant-item-cont {
+    width: 100%;
+    margin: 5rem 0 3rem 0;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+.item {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+    color: #c7ecee;
+    /* display: block; */
+}
+
+.item button {
+    width: 5rem;
+    height: 2rem;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    color: #c7ecee;
+    border: none;
+    border-radius: 3em;
+    cursor: pointer;
+    box-shadow: #67e6dc 0px 1px 4px, #67e6dc 0px 0px 0px 3px;
+    transition: all 300ms ease;
+}
+.item button:hover{
+    background-color: #67e6dc;
+    color: #130f40;
+}
+
+/* ========================================All Menu Items===================================== */
+.menu-container {
+    width: 100%;
+    margin: 5rem 0 3rem 0;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+/* =========================================Food cart items============================================== */
+.cart-item{
+    margin: 5rem;
+    font-weight: 700;
+    /* background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: #67e6dc 0px 2px 4px 0px, #67e6dc 0px 2px 16px 0px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+    color: #c7ecee;
+}
+.cart-item button{
+    width: 5rem;
+    height: 2rem;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    color: #c7ecee;
+    border: none;
+    border-radius: 3em;
+    cursor: pointer;
+    box-shadow: #67e6dc 0px 1px 4px, #67e6dc 0px 0px 0px 3px;
+    transition: all 300ms ease;
+}
+.cart-item button:hover{
+    background-color: #67e6dc;
+    color: #130f40;
+}
+/* .foodcart-container p{
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+} */

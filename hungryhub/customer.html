@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Customer Management</title>
+  <link rel="icon" href="./images/HungerHub.png" type="image/png">
+  <link rel="stylesheet" href="customer.css">
+
+  <script src="/login.js"></script>
+  <script src="/customer.js"></script>
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-dark p-2 m-0 d-flex justify-content-between">
+    <!-- Navbar content -->
+    <h2 class="">Admin Panel</h2>
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/restaurant.html">Restaurant</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/item.html">Items</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="/">Customer</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="admin.html">Admin</a>
+      </li>
+    </ul>
+    <button id="logoutbtn" type="button" class="">Log Out</button>
+  </nav>
+
+  <div class="container" style="margin-top: 5rem;">
+    <h1>Customer Management</h1>
+    <!-- <button id="addBtn" type="submit" onclick="">Add Customer</button> -->
+    <table>
+      <thead>
+        <tr class="row1">
+          <th>ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Contact No</th>
+          <th>Email</th>
+          <th>Password</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="customerTable"></tbody>
+    </table>
+  </div>
+
+  <div class="container" id="addcustomer">
+    <h2>Add Customer</h2>
+    <form method="post">
+      
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" required><br>
+
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" required><br>
+
+      <label for="age">Age:</label>
+      <input type="text" id="age" required><br>
+
+      <label for="gender">Gender:</label>
+      <input type="text" id="gender" required><br>
+
+      <label for="contact">Contact No:</label>
+      <input type="text" id="contact" required><br>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" required><br>
+
+      <label for="password">Password:</label>
+      <input type="text" id="password" required><br>
+
+      <button class="addBtn" type="button" onclick="addCustomer()">Add</button>
+    </form>
+  </div>
+
+  <div class="container" id="updateForm" style="display: none;">
+    <h2>Update Customer</h2>
+    <form>
+      <input type="hidden" id="updateId">
+
+      <label for="updatefName">First Name:</label>
+      <input type="text" id="updatefName" required><br>
+
+      <label for="updatelName">Last Name:</label>
+      <input type="text" id="updatelName" required><br>
+
+      <label for="updateAge">Age:</label>
+      <input type="text" id="updateAge" required><br>
+
+      <label for="updateGender">Gender:</label>
+      <input type="text" id="updateGender" required><br>
+
+      <label for="updateContact">Contact No:</label>
+      <input type="text" id="updateContact" required><br>
+
+      <label for="updateEmail">Email:</label>
+      <input type="text" id="updateEmail" required><br>
+
+      <label for="updatePassword">Password:</label>
+      <input type="text" id="updatePassword" required><br>
+
+      <button class="upBtn" type="button" id="updateCustomerButton">Update</button>
+      <button class="upBtn" type="button" onclick="closeUpdateForm()">Cancel</button>
+    </form>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
